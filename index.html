@@ -7,28 +7,26 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive rating component</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
   <script src="index.js" defer></script>
 </head>
 <body>
   <h1>How did we do?</h1>
   <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
   <!-- rating form here -->
-   <form>
-
-   <input type="radio" id="one" name="fav_language" value="one">
+   <form id="rating-form">
+   <input type="radio" id="one" name="rating" value="one">
     <label for="one">1</label>
-    <input type="radio" id="two" name="fav_language" value="two">
+    <input type="radio" id="two" name="rating" value="two">
     <label for="two">2</label>
-    <input type="radio" id="three" name="fav_language" value="three">
+    <input type="radio" id="three" name="rating" value="three">
     <label for="three">3</label>
-    <input type="radio" id="four" name="fav_language" value="four">
+    <input type="radio" id="four" name="rating" value="four">
     <label for="four">4</label>
-    <input type="radio" id="five" name="fav_language" value="five">
+    <input type="radio" id="five" name="rating" value="five">
     <label for="five">5</label>
+    <br>
+    <button type="submit" name="submit" form="rating-form" value="submit">Submit</button>
+    <p id="output"></p>
   </form> 
 
 
