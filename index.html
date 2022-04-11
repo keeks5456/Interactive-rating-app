@@ -10,18 +10,28 @@
   <script src="index.js" defer></script>
 </head>
 <body>
-  <h1>How did we do?</h1>
-  <p classname="sm-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+  <h1 class="title">How did we do?</h1>
+  <p class="sm-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
   <!-- rating form here -->
-<div id="rating-container">
-  <button classname="rating" id="1">1</button>
-  <button classname="rating" id="2">2</button>
-  <button classname="rating" id="3">3</button>
-  <button classname="rating" id="4">4</button>
-  <button classname="rating" id="5">5</button>
+<div id="rating-card">
+  <button class="rating" id="1">1</button>
+  <button class="rating" id="2">2</button>
+  <button class="rating" id="3">3</button>
+  <button class="rating" id="4">4</button>
+  <button class="rating" id="5">5</button>
+  <div id="submit- container">
+    <button id="submit">Submit</button>
+  </div>
 </div>
-<button id="submit">Submit</button>
 
+<!-- //thank you  -->
+<div id="thankyou-card" class="hidden">
+<div id="answer"></div>
+<div class="text-container">
+<h1 class="title">Thank you!</h1>
+<p class="sm-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+</div>
+</div>
 
 </body>
 </one>
