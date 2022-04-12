@@ -1,0 +1,35 @@
+
+.card-container{
+  border: 2px solid black;
+  margin-left: 0;
+  margin-right: 0;
+  /* width: 40em; */
+}
+
+#rating-card{
+  border: 2px solid red;
+}
+
+.rating-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  font-family: Overpass;
+  font-weight: 400;
+}
+
+#submit-btn{
+background-color: hsl(25, 97%, 53%);
+}
+.hidden{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+ #rating-card{
+   margin: 30px;
+ }
+}
+
