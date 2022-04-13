@@ -18,7 +18,7 @@ selectRateButton();
 //add an active funtion to button thats clicked
 
 function activeRateClicked() {
-  // resetButton();
+  resetButton();
   response = this.id;
   this.classList.add("active");
   submit.disabled = false;

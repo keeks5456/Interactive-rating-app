@@ -1,35 +1,114 @@
+html {
+  box-sizing: border-box;
+}
 
-.card-container{
+body {
+  background: hsl(216, 12%, 8%);
+}
+
+
+.star-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: all 0.3s;
+  background-color: hsl(215, 18%, 22%);
+  position: relative;
+  left: 12px;
+  top: 10px;
+}
+
+.star {
+
+  position: relative;
+  left: 11px;
+  top: 11px;
+
+}
+
+.card-container {
   border: 2px solid black;
-  margin-left: 0;
-  margin-right: 0;
+  /* margin-left: 0;
+  margin-right: 0; */
+  background: hsl(216, 12%, 8%);
+
   /* width: 40em; */
 }
 
-#rating-card{
-  border: 2px solid red;
+#rating-card {
+  border: 2px solid hsl(213, 19%, 22%);
+  background: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  height: auto;
+  width: 19em;
+  margin: auto;
+  padding: 29px;
 }
 
-.rating-text{
-  display: flex;
+
+
+.rating-text {
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-  font-family: Overpass;
+  flex-flow: column wrap; */
+  color: hsl(216, 12%, 54%);
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+}
+
+.sm-text {
+  font: 5px;
   font-weight: 400;
 }
 
-#submit-btn{
-background-color: hsl(25, 97%, 53%);
+#submit-btn {
+  background-color: hsl(25, 97%, 53%);
 }
-.hidden{
+
+.hidden {
   display: none;
 }
 
+#rating-buttons {
+  display: flex;
+  justify-content: space-evenly;
 
-@media only screen and (max-width: 600px) {
- #rating-card{
-   margin: 30px;
- }
 }
 
+.rating {
+  background-color: hsl(215, 18%, 19%);
+  /* opacity: 0.5; */
+  border: none;
+  border-radius: 22px;
+  height: 3rem;
+  width: 3rem;
+  color: hsl(216, 12%, 54%);
+}
+
+.rating:hover {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.rating :active .active {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  #rating-card {
+    /* margin: 30px; */
+
+  }
+}
