@@ -1,16 +1,16 @@
 let submit = document.getElementById("submit-btn");
 let rateButtons = document.getElementsByClassName("rating");
 let showAnswer = document.getElementById("showAnswer");
-let ratingCard = document.getElementById("rating-card");
+let ratingCard = document.getElementById("card");
 let thankYouCard = document.getElementById("thank-you-card");
 console.log(submit);
 let response = "";
-// submit.disabled = true;
+
 
 //we need to add a click funtion to our buttons
 function selectRateButton() {
   for (let i = 0; i < rateButtons.length; i++) {
-    rateButtons[i].addEventListener("click", activeRateClicked);
+    rateButtons[i].addEventListener("click", activeRateClicked, false);
   }
 }
 selectRateButton();
@@ -19,9 +19,14 @@ selectRateButton();
 
 function activeRateClicked() {
   resetButton();
+  this.classList.toggle("active");
   response = this.id;
-  this.classList.add("active");
-  submit.disabled = false;
+
+  // if(response !== "active"){
+  //   this.classList.toggle("active")
+  // } else{
+  //   resetButton()
+  // }
 }
 
 //reset the button so a different one looks activated
@@ -29,7 +34,7 @@ function resetButton() {
   for (let i = 0; i < rateButtons.length; i++) {
     rateButtons[i].classList.remove("active");
   }
-  response = "";
+  return response = "";
 }
 
 //submit button functionality
@@ -39,6 +44,8 @@ submit.addEventListener("click", () => {
   showResponse();
 });
 console.log(ratingCard)
+
+
 function showResponse() {
   ratingCard.classList.add("hidden");
   thankYouCard.classList.remove("hidden");

@@ -29,15 +29,11 @@ body {
 }
 
 .card-container {
-  border: 2px solid black;
-  /* margin-left: 0;
-  margin-right: 0; */
   background: hsl(216, 12%, 8%);
-
-  /* width: 40em; */
+  padding-top: 4rem;
 }
 
-#rating-card {
+#card{
   border: 2px solid hsl(213, 19%, 22%);
   background: hsl(213, 19%, 18%);
   border-radius: 1rem;
@@ -49,14 +45,6 @@ body {
 
 
 
-.rating-text {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap; */
-  color: hsl(216, 12%, 54%);
-}
-
 .title {
   color: hsl(0, 0%, 100%);
   font-family: 'Overpass', sans-serif;
@@ -66,11 +54,9 @@ body {
 .sm-text {
   font: 5px;
   font-weight: 400;
+  color: hsl(216, 12%, 54%);
 }
 
-#submit-btn {
-  background-color: hsl(25, 97%, 53%);
-}
 
 .hidden {
   display: none;
@@ -83,24 +69,80 @@ body {
 }
 
 .rating {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
   background-color: hsl(215, 18%, 19%);
-  /* opacity: 0.5; */
   border: none;
   border-radius: 22px;
   height: 3rem;
   width: 3rem;
   color: hsl(216, 12%, 54%);
+  
 }
 
 .rating:hover {
   background-color: hsl(0, 0%, 100%);
   border-color: hsl(0, 0%, 100%);
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
 }
 
-.rating :active .active {
+.rating .submit-active:active {
   background-color: hsl(0, 0%, 100%);
   border-color: hsl(0, 0%, 100%);
+}
+
+.rating :active .active{
+  background-color: green;
+}
+
+#submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#submit-btn {
+  border: none;
+  border-radius: 21px;
+  height: 3rem;
+  width: 18rem;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+
+#submit-btn:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  transition: all 0.5s ease-in-out;
+
+}
+
+#thank-you-card{
+  display: flex;
+  align-content: center;
+  flex-flow: wrap column;
+  border: 2px solid hsl(213, 19%, 22%);
+  background: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  height: auto;
+  width: 16em;
+  margin: auto;
+  padding: 29px;
+}
+
+#showAnswer{
+  background-color: hsl(216deg 9% 26%);
+  border-radius: 10px;
+  border: 2px solid hsl(216deg 9% 26%);
+  text-align: center;
+  height: auto;
+  width: 12rem;
+  padding: 8px;
+  color: hsl(25, 97%, 53%);
 }
 
 
@@ -108,7 +150,11 @@ body {
 
 @media only screen and (max-width: 600px) {
   #rating-card {
-    /* margin: 30px; */
+    margin: 30px;
 
+  }
+
+  #thank-you-card{
+    margin: 30px;
   }
 }
