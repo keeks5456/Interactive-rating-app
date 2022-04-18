@@ -1,0 +1,180 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+}
+
+
+.star-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: all 0.3s;
+  background-color: hsl(215, 18%, 22%);
+  position: relative;
+  left: 12px;
+  top: 10px;
+}
+
+.star {
+
+  position: relative;
+  left: 11px;
+  top: 11px;
+
+}
+
+.card-container {
+  background: hsl(216, 12%, 8%);
+  padding-top: 4rem;
+}
+
+
+#rating-card {
+  border: 2px solid hsl(213, 19%, 22%);
+  background: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  height: auto;
+  width: 19em;
+  margin: auto;
+  padding: 29px;
+  z-index: 1;
+}
+
+
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+}
+
+.sm-text {
+  font: 5px;
+  font-weight: 400;
+  color: hsl(216, 12%, 54%);
+}
+
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+#rating-buttons {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.rating {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  /* background-color: hsl(215, 18%, 19%); */
+  background-color: pink;
+  border: none;
+  border-radius: 22px;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+
+}
+
+.show{
+  background-color: aqua;
+}
+
+.rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  border-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.rating .submit-active:active {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
+}
+
+#submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#submit-btn {
+  border: none;
+  border-radius: 21px;
+  height: 3rem;
+  width: 18rem;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+
+#submit-btn:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  transition: all 0.5s ease-in-out;
+
+}
+
+#thank-you-card-container{
+  background: hsl(216, 12%, 8%);
+  padding-top: 4rem;
+}
+
+#thank-you-card{
+  display: flex;
+  align-content: center;
+  flex-flow: wrap column;
+  border: 2px solid hsl(213, 19%, 22%);
+  background: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  height: auto;
+  width: 16em;
+  margin: auto;
+  padding: 29px;
+  text-align: center;
+}
+
+#showAnswer {
+  background-color: hsl(216deg 9% 26%);
+  border-radius: 10px;
+  border: 2px solid hsl(216deg 9% 26%);
+  margin-left: 22px;
+  height: auto;
+  width: 12rem;
+  padding: 8px;
+  color: hsl(25, 97%, 53%);
+}
+
+
+#footer{
+  padding-top: 7em;
+  text-align: center;
+  color:  hsl(216, 12%, 54%);
+}
+
+#footer a {
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #rating-card {
+    margin: 30px;
+
+  }
+
+}
