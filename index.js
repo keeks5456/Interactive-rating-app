@@ -9,7 +9,7 @@ let response = "";
 function selectRateButton() {
   for (let i = 0; i < rateButtons.length; i++) {
     rateButtons[i].addEventListener("click", () => {
-      activeRateClicked(rateButtons[i])
+      activeRateClicked(rateButtons[i]);
     });
   }
 }
@@ -17,44 +17,23 @@ selectRateButton();
 
 //add an active funtion to button thats clicked
 function activeRateClicked(element) {
-  // debugger
-console.log(element)
-//toggle allows to auto show or remove show
+  console.log(element);
+  //toggle allows to auto show or remove show
   element.classList.toggle("show");
-  response = element.innerText
- 
-  console.log(response)
+  response = element.innerText;
+
+  console.log(response);
 }
-
-
-
 
 //submit button functionality
-function submitRating() {
-  submit.addEventListener("click", () => {
 
-    thankYouCard.classList.remove("hide")
-    ratingCard.classList.add("hide")
-    let showRating = `You selected ${response} out of 5`;
-    return showAnswer.innerText = showRating;
-  
+submit.addEventListener("click", () => {
+  showResponse();
+});
 
-    // showResponse();
-  });
+function showResponse() {
+  thankYouCard.classList.remove("hide");
+  ratingCard.classList.add("hide");
+  let showRating = `You selected ${response} out of 5`;
+  return (showAnswer.innerText = showRating);
 }
-submitRating();
-
-
-// function showResponse() {
-// console.log(response)
-
-//   thankYouCard.classList.remove("hide")
-//   ratingCard.classList.add("hide")
-//   let showRating = `You selected ${response} out of 5`;
-//   return showAnswer.innerText = showRating;
-
-
-// }
-
-// showResponse()
-
