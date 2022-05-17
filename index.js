@@ -5,8 +5,6 @@ let ratingCard = document.getElementById("rating-card");
 let thankYouCard = document.getElementById("thank-you-card");
 let response = "";
 
-//we need to add a click funtion to our buttons
-
 rateButtons.forEach((btn, i) =>  {
   console.log(i)
   btn.addEventListener('click', e => {
@@ -16,7 +14,6 @@ rateButtons.forEach((btn, i) =>  {
       btn.classList.add('show');
       submit.addEventListener('click', ev => {
           ev.preventDefault();
-          // submitContainer.classList.add('submitted');
           showResponse(e);
       });
   });
