@@ -82,13 +82,13 @@ body {
 }
 
 .show{
-  background-color: hsl(25, 97%, 53%);
-  border-color: hsl(25, 97%, 53%);
+  border-color: #959eac;
+  background-color:#959eac;
 }
 
 .rating:hover {
-  background-color:#959eac;
-  border-color: #959eac;
+  background-color: hsl(25, 97%, 53%);
+  border-color: hsl(25, 97%, 53%);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 
